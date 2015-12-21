@@ -34,10 +34,10 @@ for w in words:
 
 
 print len(final)
-    
-        
-        
-    
+
+
+
+
 ## part 2
 
 final = []
@@ -57,6 +57,6 @@ for w in words:
 
 
 print len(final)
- 
 
-        
+
+
