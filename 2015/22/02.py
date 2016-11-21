@@ -25,7 +25,7 @@ class Game(object):
 
     def get_index(self):
         index = np.random.choice(self.spells.shape[0])
-        if self.spells[index][0] in [c[0] for c in self.current_moves if c[2] > 1]:
+        if self.spells[index][0] in [c[0] for c in self.current_moves if c[2] >= 1]:
             return self.get_index()
         else:
             return index
@@ -49,7 +49,7 @@ class Game(object):
             # heal
             self.hp += c[3]
             # armor
-            self.armor = sum(i[4] for i in self.current_moves)
+            self.armor = max(i[4] for i in self.current_moves)
             # mana increase
             self.mana += c[5]
 
@@ -61,6 +61,12 @@ class Game(object):
         self.current_moves = new_moves
 
     def play(self):
+        # hard difficulty
+        self.hp -= 1
+        if self.hp <= 0:
+            self.win = False
+            return False
+
         # check to  make sure there is enough mana left
         if not self.check_mana():
             return False
@@ -74,6 +80,8 @@ class Game(object):
 
         # BOSS TURN
         self.hp -= np.max([self.boss_damage - self.armor, 1])
+
+        self.run_moves()
 
         if self.hp <= 0:
             self.win = False
