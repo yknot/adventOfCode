@@ -1,0 +1,1605 @@
+Move 0
+Floors:
+set()
+{('generator', 'lithium')}
+{('generator', 'hydrogen')}
+{('chip', 'hydrogen'), ('chip', 'lithium')}
+Elevator Location:
+1
+
+[2]
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('chip', 'lithium'))
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+[(2, (('chip', 'hydrogen'), ('chip', 'lithium'))), (2, (('chip', 'hydrogen'),))]
+Move 1
+Floors:
+set()
+{('generator', 'lithium')}
+{('chip', 'hydrogen'), ('generator', 'hydrogen'), ('chip', 'lithium')}
+set()
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (1, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (3, (('chip', 'hydrogen'), ('chip', 'lithium'))), (1, (('chip', 'hydrogen'), ('chip', 'lithium'))), (3, (('generator', 'hydrogen'), ('chip', 'lithium'))), (1, (('chip', 'hydrogen'),)), (3, (('generator', 'hydrogen'),)), (1, (('generator', 'hydrogen'),)), (3, (('chip', 'lithium'),)), (1, (('chip', 'lithium'),))]
+Move 2
+Floors:
+set()
+{('chip', 'hydrogen'), ('generator', 'hydrogen'), ('generator', 'lithium')}
+{('chip', 'lithium')}
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(4, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('chip', 'hydrogen'), ('generator', 'lithium'))), (4, (('generator', 'hydrogen'), ('generator', 'lithium'))), (2, (('generator', 'hydrogen'), ('generator', 'lithium'))), (4, (('chip', 'hydrogen'),)), (2, (('chip', 'hydrogen'),)), (4, (('generator', 'hydrogen'),)), (4, (('generator', 'lithium'),)), (2, (('generator', 'lithium'),))]
+Move 3
+Floors:
+{('chip', 'hydrogen'), ('generator', 'hydrogen')}
+{('generator', 'lithium')}
+{('chip', 'lithium')}
+set()
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (3, (('generator', 'hydrogen'),))]
+hash found
+Move 4
+Floors:
+{('chip', 'hydrogen')}
+{('generator', 'hydrogen'), ('generator', 'lithium')}
+{('chip', 'lithium')}
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(4, (('generator', 'hydrogen'), ('generator', 'lithium'))), (2, (('generator', 'hydrogen'), ('generator', 'lithium'))), (4, (('generator', 'hydrogen'),)), (2, (('generator', 'lithium'),))]
+Move 5
+Floors:
+{('chip', 'hydrogen'), ('generator', 'lithium'), ('generator', 'hydrogen')}
+set()
+{('chip', 'lithium')}
+set()
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (3, (('generator', 'lithium'), ('generator', 'hydrogen'))), (3, (('chip', 'hydrogen'),)), (3, (('generator', 'lithium'),)), (3, (('generator', 'hydrogen'),))]
+Move 6
+Floors:
+{('generator', 'lithium')}
+{('chip', 'hydrogen'), ('generator', 'hydrogen')}
+{('chip', 'lithium')}
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+[(4, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('chip', 'hydrogen'),)), (4, (('generator', 'hydrogen'),))]
+hash found
+Move 7
+Floors:
+{('generator', 'lithium')}
+set()
+{('chip', 'lithium'), ('generator', 'hydrogen'), ('chip', 'hydrogen')}
+set()
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'lithium'), ('chip', 'hydrogen'))), (1, (('chip', 'lithium'), ('chip', 'hydrogen'))), (3, (('generator', 'hydrogen'), ('chip', 'hydrogen'))), (1, (('generator', 'hydrogen'), ('chip', 'hydrogen'))), (3, (('chip', 'lithium'),)), (1, (('chip', 'lithium'),)), (3, (('generator', 'hydrogen'),)), (1, (('generator', 'hydrogen'),)), (3, (('chip', 'hydrogen'),)), (1, (('chip', 'hydrogen'),))]
+Move 8
+Floors:
+{('generator', 'lithium')}
+{('chip', 'lithium'), ('chip', 'hydrogen')}
+{('generator', 'hydrogen')}
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('chip', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+[(4, (('chip', 'lithium'), ('chip', 'hydrogen'))), (2, (('chip', 'lithium'), ('chip', 'hydrogen'))), (4, (('chip', 'lithium'),)), (2, (('chip', 'hydrogen'),))]
+Move 9
+Floors:
+{('chip', 'lithium'), ('generator', 'lithium'), ('chip', 'hydrogen')}
+set()
+{('generator', 'hydrogen')}
+set()
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'lithium'), ('generator', 'lithium'))), (3, (('chip', 'lithium'), ('chip', 'hydrogen'))), (3, (('chip', 'lithium'),)), (3, (('generator', 'lithium'),)), (3, (('chip', 'hydrogen'),))]
+Move 10
+Floors:
+{('chip', 'hydrogen')}
+{('chip', 'lithium'), ('generator', 'lithium')}
+{('generator', 'hydrogen')}
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(4, (('chip', 'lithium'), ('generator', 'lithium'))), (2, (('chip', 'lithium'), ('generator', 'lithium'))), (4, (('chip', 'lithium'),)), (2, (('generator', 'lithium'),))]
+hash found
+Move 11
+Floors:
+{('chip', 'hydrogen')}
+set()
+{('chip', 'lithium'), ('generator', 'lithium'), ('generator', 'hydrogen')}
+set()
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'lithium'), ('generator', 'lithium'))), (1, (('chip', 'lithium'), ('generator', 'lithium'))), (3, (('generator', 'lithium'), ('generator', 'hydrogen'))), (1, (('generator', 'lithium'), ('generator', 'hydrogen'))), (3, (('chip', 'lithium'),)), (1, (('chip', 'lithium'),)), (3, (('generator', 'lithium'),)), (1, (('generator', 'lithium'),)), (3, (('generator', 'hydrogen'),)), (1, (('generator', 'hydrogen'),))]
+hash found
+Move 12
+Floors:
+{('chip', 'hydrogen')}
+set()
+{('generator', 'hydrogen')}
+{('chip', 'lithium'), ('generator', 'lithium')}
+Elevator Location:
+1
+
+[2]
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'lithium'))
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(2, (('chip', 'lithium'), ('generator', 'lithium'))), (2, (('generator', 'lithium'),))]
+hash found
+Move 13
+Floors:
+{('chip', 'hydrogen')}
+set()
+{('generator', 'lithium'), ('generator', 'hydrogen')}
+{('chip', 'lithium')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('generator', 'lithium'), ('generator', 'hydrogen'))), (1, (('generator', 'lithium'), ('generator', 'hydrogen'))), (3, (('generator', 'lithium'),)), (1, (('generator', 'lithium'),)), (3, (('generator', 'hydrogen'),))]
+Move 14
+Floors:
+{('chip', 'hydrogen')}
+{('generator', 'hydrogen'), ('generator', 'lithium')}
+set()
+{('chip', 'lithium')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(4, (('generator', 'hydrogen'), ('generator', 'lithium'))), (2, (('generator', 'hydrogen'), ('generator', 'lithium'))), (4, (('generator', 'hydrogen'),)), (2, (('generator', 'hydrogen'),)), (2, (('generator', 'lithium'),))]
+Move 15
+Floors:
+{('chip', 'hydrogen'), ('generator', 'lithium'), ('generator', 'hydrogen')}
+set()
+set()
+{('chip', 'lithium')}
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (3, (('generator', 'lithium'), ('generator', 'hydrogen'))), (3, (('chip', 'hydrogen'),)), (3, (('generator', 'lithium'),)), (3, (('generator', 'hydrogen'),))]
+Move 16
+Floors:
+{('generator', 'lithium')}
+{('chip', 'hydrogen'), ('generator', 'hydrogen')}
+set()
+{('chip', 'lithium')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+[(4, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('chip', 'hydrogen'),)), (4, (('generator', 'hydrogen'),)), (2, (('generator', 'hydrogen'),))]
+hash found
+Move 17
+Floors:
+{('generator', 'lithium')}
+set()
+{('chip', 'hydrogen'), ('generator', 'hydrogen')}
+{('chip', 'lithium')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (1, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (3, (('chip', 'hydrogen'),)), (1, (('chip', 'hydrogen'),)), (3, (('generator', 'hydrogen'),))]
+hash found
+Move 18
+Floors:
+{('generator', 'lithium')}
+set()
+set()
+{('chip', 'lithium'), ('generator', 'hydrogen'), ('chip', 'hydrogen')}
+Elevator Location:
+1
+
+[2]
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'hydrogen'))
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('chip', 'hydrogen'))
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'), ('chip', 'hydrogen'))
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+[(2, (('chip', 'lithium'), ('chip', 'hydrogen'))), (2, (('generator', 'hydrogen'), ('chip', 'hydrogen'))), (2, (('chip', 'lithium'),)), (2, (('generator', 'hydrogen'),)), (2, (('chip', 'hydrogen'),))]
+Move 19
+Floors:
+{('generator', 'lithium')}
+set()
+{('chip', 'lithium'), ('chip', 'hydrogen')}
+{('generator', 'hydrogen')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'lithium'), ('chip', 'hydrogen'))), (1, (('chip', 'lithium'), ('chip', 'hydrogen'))), (3, (('chip', 'lithium'),)), (3, (('chip', 'hydrogen'),)), (1, (('chip', 'hydrogen'),))]
+Move 20
+Floors:
+{('generator', 'lithium')}
+{('chip', 'lithium'), ('chip', 'hydrogen')}
+set()
+{('generator', 'hydrogen')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('chip', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+[(4, (('chip', 'lithium'), ('chip', 'hydrogen'))), (2, (('chip', 'lithium'), ('chip', 'hydrogen'))), (4, (('chip', 'lithium'),)), (2, (('chip', 'lithium'),)), (2, (('chip', 'hydrogen'),))]
+Move 21
+Floors:
+{('chip', 'lithium'), ('generator', 'lithium'), ('chip', 'hydrogen')}
+set()
+set()
+{('generator', 'hydrogen')}
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'lithium'), ('generator', 'lithium'))), (3, (('chip', 'lithium'), ('chip', 'hydrogen'))), (3, (('chip', 'lithium'),)), (3, (('generator', 'lithium'),)), (3, (('chip', 'hydrogen'),))]
+Move 22
+Floors:
+{('chip', 'hydrogen')}
+{('chip', 'lithium'), ('generator', 'lithium')}
+set()
+{('generator', 'hydrogen')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(4, (('chip', 'lithium'), ('generator', 'lithium'))), (2, (('chip', 'lithium'), ('generator', 'lithium'))), (4, (('chip', 'lithium'),)), (2, (('chip', 'lithium'),)), (2, (('generator', 'lithium'),))]
+hash found
+Move 23
+Floors:
+{('chip', 'hydrogen')}
+set()
+{('chip', 'lithium'), ('generator', 'lithium')}
+{('generator', 'hydrogen')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'lithium'), ('generator', 'lithium'))), (1, (('chip', 'lithium'), ('generator', 'lithium'))), (3, (('chip', 'lithium'),)), (3, (('generator', 'lithium'),)), (1, (('generator', 'lithium'),))]
+hash found
+Move 24
+Floors:
+{('chip', 'hydrogen')}
+set()
+set()
+{('chip', 'lithium'), ('generator', 'lithium'), ('generator', 'hydrogen')}
+Elevator Location:
+1
+
+[2]
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'lithium'))
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'hydrogen'))
+n_l value: 2
+HERE
+2 (('generator', 'lithium'), ('generator', 'hydrogen'))
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+[(2, (('chip', 'lithium'), ('generator', 'lithium'))), (2, (('generator', 'lithium'), ('generator', 'hydrogen'))), (2, (('chip', 'lithium'),)), (2, (('generator', 'lithium'),)), (2, (('generator', 'hydrogen'),))]
+hash found
+hash found
+Move 25
+Floors:
+{('chip', 'hydrogen')}
+set()
+{('chip', 'lithium')}
+{('generator', 'hydrogen'), ('generator', 'lithium')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'lithium'),)), (1, (('chip', 'lithium'),))]
+Move 26
+Floors:
+{('chip', 'hydrogen')}
+{('chip', 'lithium')}
+set()
+{('generator', 'lithium'), ('generator', 'hydrogen')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+[(4, (('chip', 'lithium'),)), (2, (('chip', 'lithium'),))]
+Move 27
+Floors:
+{('chip', 'hydrogen'), ('chip', 'lithium')}
+set()
+set()
+{('generator', 'hydrogen'), ('generator', 'lithium')}
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'hydrogen'), ('chip', 'lithium'))), (3, (('chip', 'hydrogen'),)), (3, (('chip', 'lithium'),))]
+Move 28
+Floors:
+set()
+{('chip', 'hydrogen'), ('chip', 'lithium')}
+set()
+{('generator', 'lithium'), ('generator', 'hydrogen')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('chip', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+[(4, (('chip', 'hydrogen'), ('chip', 'lithium'))), (2, (('chip', 'hydrogen'), ('chip', 'lithium'))), (4, (('chip', 'hydrogen'),)), (2, (('chip', 'hydrogen'),)), (4, (('chip', 'lithium'),)), (2, (('chip', 'lithium'),))]
+hash found
+Move 29
+Floors:
+set()
+set()
+{('chip', 'hydrogen'), ('chip', 'lithium')}
+{('generator', 'hydrogen'), ('generator', 'lithium')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'hydrogen'), ('chip', 'lithium'))), (1, (('chip', 'hydrogen'), ('chip', 'lithium'))), (3, (('chip', 'hydrogen'),)), (1, (('chip', 'hydrogen'),)), (3, (('chip', 'lithium'),)), (1, (('chip', 'lithium'),))]
+hash found
+Move 30
+Floors:
+set()
+set()
+set()
+{('chip', 'hydrogen'), ('generator', 'lithium'), ('generator', 'hydrogen'), ('chip', 'lithium')}
+Elevator Location:
+1
+
+[2]
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'lithium'))
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'hydrogen'))
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('chip', 'lithium'))
+n_l value: 2
+HERE
+2 (('generator', 'lithium'), ('generator', 'hydrogen'))
+n_l value: 2
+HERE
+2 (('generator', 'lithium'), ('chip', 'lithium'))
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'), ('chip', 'lithium'))
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+[(2, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('chip', 'hydrogen'), ('chip', 'lithium'))), (2, (('generator', 'lithium'), ('generator', 'hydrogen'))), (2, (('generator', 'lithium'), ('chip', 'lithium'))), (2, (('chip', 'hydrogen'),)), (2, (('generator', 'lithium'),)), (2, (('generator', 'hydrogen'),)), (2, (('chip', 'lithium'),))]
+Move 31
+Floors:
+set()
+set()
+{('chip', 'hydrogen'), ('generator', 'hydrogen')}
+{('generator', 'lithium'), ('chip', 'lithium')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (1, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (3, (('chip', 'hydrogen'),)), (1, (('chip', 'hydrogen'),)), (3, (('generator', 'hydrogen'),)), (1, (('generator', 'hydrogen'),))]
+Move 32
+Floors:
+set()
+{('chip', 'hydrogen'), ('generator', 'hydrogen')}
+set()
+{('chip', 'lithium'), ('generator', 'lithium')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+[(4, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (4, (('chip', 'hydrogen'),)), (2, (('chip', 'hydrogen'),)), (4, (('generator', 'hydrogen'),)), (2, (('generator', 'hydrogen'),))]
+Move 33
+Floors:
+{('chip', 'hydrogen'), ('generator', 'hydrogen')}
+set()
+set()
+{('chip', 'lithium'), ('generator', 'lithium')}
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (3, (('chip', 'hydrogen'),)), (3, (('generator', 'hydrogen'),))]
+hash found
+Move 34
+Floors:
+{('generator', 'hydrogen')}
+{('chip', 'hydrogen')}
+set()
+{('chip', 'lithium'), ('generator', 'lithium')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+[(4, (('chip', 'hydrogen'),)), (2, (('chip', 'hydrogen'),))]
+hash found
+Move 35
+Floors:
+{('generator', 'hydrogen')}
+set()
+{('chip', 'hydrogen')}
+{('chip', 'lithium'), ('generator', 'lithium')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'hydrogen'),)), (1, (('chip', 'hydrogen'),))]
+hash found
+Move 36
+Floors:
+{('generator', 'hydrogen')}
+set()
+set()
+{('chip', 'lithium'), ('generator', 'lithium'), ('chip', 'hydrogen')}
+Elevator Location:
+1
+
+[2]
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'lithium'))
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('chip', 'hydrogen'))
+n_l value: 2
+HERE
+2 (('generator', 'lithium'), ('chip', 'hydrogen'))
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+[(2, (('chip', 'lithium'), ('generator', 'lithium'))), (2, (('chip', 'lithium'), ('chip', 'hydrogen'))), (2, (('chip', 'lithium'),)), (2, (('generator', 'lithium'),)), (2, (('chip', 'hydrogen'),))]
+Move 37
+Floors:
+{('generator', 'hydrogen')}
+set()
+{('chip', 'lithium'), ('generator', 'lithium')}
+{('chip', 'hydrogen')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'lithium'), ('generator', 'lithium'))), (1, (('chip', 'lithium'), ('generator', 'lithium'))), (3, (('chip', 'lithium'),)), (1, (('chip', 'lithium'),)), (3, (('generator', 'lithium'),))]
+Move 38
+Floors:
+{('generator', 'hydrogen')}
+{('chip', 'lithium'), ('generator', 'lithium')}
+set()
+{('chip', 'hydrogen')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(4, (('chip', 'lithium'), ('generator', 'lithium'))), (2, (('chip', 'lithium'), ('generator', 'lithium'))), (2, (('chip', 'lithium'),)), (4, (('generator', 'lithium'),)), (2, (('generator', 'lithium'),))]
+Move 39
+Floors:
+{('chip', 'lithium'), ('generator', 'lithium'), ('generator', 'hydrogen')}
+set()
+set()
+{('chip', 'hydrogen')}
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'lithium'), ('generator', 'lithium'))), (3, (('generator', 'lithium'), ('generator', 'hydrogen'))), (3, (('chip', 'lithium'),)), (3, (('generator', 'lithium'),)), (3, (('generator', 'hydrogen'),))]
+hash found
+Move 40
+Floors:
+{('chip', 'lithium')}
+{('generator', 'hydrogen'), ('generator', 'lithium')}
+set()
+{('chip', 'hydrogen')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(4, (('generator', 'hydrogen'), ('generator', 'lithium'))), (2, (('generator', 'hydrogen'), ('generator', 'lithium'))), (2, (('generator', 'hydrogen'),)), (4, (('generator', 'lithium'),)), (2, (('generator', 'lithium'),))]
+hash found
+Move 41
+Floors:
+{('chip', 'lithium')}
+set()
+{('generator', 'lithium'), ('generator', 'hydrogen')}
+{('chip', 'hydrogen')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('generator', 'lithium'), ('generator', 'hydrogen'))), (1, (('generator', 'lithium'), ('generator', 'hydrogen'))), (3, (('generator', 'lithium'),)), (3, (('generator', 'hydrogen'),)), (1, (('generator', 'hydrogen'),))]
+hash found
+Move 42
+Floors:
+{('chip', 'lithium')}
+set()
+set()
+{('chip', 'hydrogen'), ('generator', 'hydrogen'), ('generator', 'lithium')}
+Elevator Location:
+1
+
+[2]
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'hydrogen'))
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'lithium'))
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'), ('generator', 'lithium'))
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(2, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('generator', 'hydrogen'), ('generator', 'lithium'))), (2, (('chip', 'hydrogen'),)), (2, (('generator', 'hydrogen'),)), (2, (('generator', 'lithium'),))]
+Move 43
+Floors:
+{('chip', 'lithium')}
+set()
+{('chip', 'hydrogen'), ('generator', 'hydrogen')}
+{('generator', 'lithium')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (1, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (3, (('chip', 'hydrogen'),)), (3, (('generator', 'hydrogen'),)), (1, (('generator', 'hydrogen'),))]
+Move 44
+Floors:
+{('chip', 'lithium')}
+{('chip', 'hydrogen'), ('generator', 'hydrogen')}
+set()
+{('generator', 'lithium')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+[(4, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (4, (('chip', 'hydrogen'),)), (2, (('chip', 'hydrogen'),)), (2, (('generator', 'hydrogen'),))]
+Move 45
+Floors:
+{('chip', 'lithium'), ('generator', 'hydrogen'), ('chip', 'hydrogen')}
+set()
+set()
+{('generator', 'lithium')}
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'lithium'), ('chip', 'hydrogen'))), (3, (('generator', 'hydrogen'), ('chip', 'hydrogen'))), (3, (('chip', 'lithium'),)), (3, (('generator', 'hydrogen'),)), (3, (('chip', 'hydrogen'),))]
+Move 46
+Floors:
+{('generator', 'hydrogen')}
+{('chip', 'lithium'), ('chip', 'hydrogen')}
+set()
+{('generator', 'lithium')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('chip', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+[(4, (('chip', 'lithium'), ('chip', 'hydrogen'))), (2, (('chip', 'lithium'), ('chip', 'hydrogen'))), (2, (('chip', 'lithium'),)), (4, (('chip', 'hydrogen'),)), (2, (('chip', 'hydrogen'),))]
+hash found
+Move 47
+Floors:
+{('generator', 'hydrogen')}
+set()
+{('chip', 'lithium'), ('chip', 'hydrogen')}
+{('generator', 'lithium')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'lithium'), ('chip', 'hydrogen'))), (1, (('chip', 'lithium'), ('chip', 'hydrogen'))), (3, (('chip', 'lithium'),)), (1, (('chip', 'lithium'),)), (3, (('chip', 'hydrogen'),))]
+hash found
+hash found
+Move 48
+Floors:
+{('generator', 'hydrogen')}
+{('chip', 'lithium')}
+{('chip', 'hydrogen')}
+{('generator', 'lithium')}
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+[(2, (('chip', 'lithium'),))]
+hash found
+Move 48
+Floors:
+{('generator', 'hydrogen')}
+set()
+{('chip', 'hydrogen')}
+{('chip', 'lithium'), ('generator', 'lithium')}
+Elevator Location:
+1
+
+[2]
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'lithium'))
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(2, (('chip', 'lithium'), ('generator', 'lithium'))), (2, (('chip', 'lithium'),))]
+Move 49
+Floors:
+{('generator', 'hydrogen')}
+set()
+{('chip', 'hydrogen'), ('generator', 'lithium'), ('chip', 'lithium')}
+set()
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'hydrogen'), ('chip', 'lithium'))), (1, (('chip', 'hydrogen'), ('chip', 'lithium'))), (3, (('generator', 'lithium'), ('chip', 'lithium'))), (1, (('generator', 'lithium'), ('chip', 'lithium'))), (3, (('chip', 'hydrogen'),)), (1, (('chip', 'hydrogen'),)), (3, (('generator', 'lithium'),)), (1, (('generator', 'lithium'),)), (3, (('chip', 'lithium'),)), (1, (('chip', 'lithium'),))]
+Move 50
+Floors:
+{('generator', 'hydrogen')}
+{('chip', 'hydrogen'), ('chip', 'lithium')}
+{('generator', 'lithium')}
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('chip', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+[(4, (('chip', 'hydrogen'), ('chip', 'lithium'))), (2, (('chip', 'hydrogen'), ('chip', 'lithium'))), (4, (('chip', 'hydrogen'),)), (2, (('chip', 'lithium'),))]
+Move 51
+Floors:
+{('chip', 'hydrogen'), ('generator', 'hydrogen'), ('chip', 'lithium')}
+set()
+{('generator', 'lithium')}
+set()
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (3, (('chip', 'hydrogen'), ('chip', 'lithium'))), (3, (('chip', 'hydrogen'),)), (3, (('generator', 'hydrogen'),)), (3, (('chip', 'lithium'),))]
+Move 52
+Floors:
+{('chip', 'lithium')}
+{('chip', 'hydrogen'), ('generator', 'hydrogen')}
+{('generator', 'lithium')}
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+[(4, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (4, (('chip', 'hydrogen'),)), (2, (('generator', 'hydrogen'),))]
+hash found
+Move 53
+Floors:
+{('chip', 'lithium')}
+set()
+{('chip', 'hydrogen'), ('generator', 'hydrogen'), ('generator', 'lithium')}
+set()
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (1, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (3, (('generator', 'hydrogen'), ('generator', 'lithium'))), (1, (('generator', 'hydrogen'), ('generator', 'lithium'))), (3, (('chip', 'hydrogen'),)), (1, (('chip', 'hydrogen'),)), (3, (('generator', 'hydrogen'),)), (1, (('generator', 'hydrogen'),)), (3, (('generator', 'lithium'),)), (1, (('generator', 'lithium'),))]
+hash found
+Move 54
+Floors:
+{('chip', 'lithium')}
+set()
+{('generator', 'lithium')}
+{('chip', 'hydrogen'), ('generator', 'hydrogen')}
+Elevator Location:
+1
+
+[2]
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'hydrogen'))
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+[(2, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('generator', 'hydrogen'),))]
+hash found
+hash found
+Move 54
+Floors:
+{('chip', 'lithium')}
+{('generator', 'lithium'), ('generator', 'hydrogen')}
+{('chip', 'hydrogen')}
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'), ('generator', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+[(4, (('generator', 'lithium'), ('generator', 'hydrogen'))), (2, (('generator', 'lithium'), ('generator', 'hydrogen'))), (4, (('generator', 'lithium'),)), (2, (('generator', 'hydrogen'),))]
+Move 55
+Floors:
+{('chip', 'lithium'), ('generator', 'hydrogen'), ('generator', 'lithium')}
+set()
+{('chip', 'hydrogen')}
+set()
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'lithium'), ('generator', 'lithium'))), (3, (('generator', 'hydrogen'), ('generator', 'lithium'))), (3, (('chip', 'lithium'),)), (3, (('generator', 'hydrogen'),)), (3, (('generator', 'lithium'),))]
+Move 56
+Floors:
+{('generator', 'hydrogen')}
+{('chip', 'lithium'), ('generator', 'lithium')}
+{('chip', 'hydrogen')}
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(4, (('chip', 'lithium'), ('generator', 'lithium'))), (2, (('chip', 'lithium'), ('generator', 'lithium'))), (2, (('chip', 'lithium'),)), (4, (('generator', 'lithium'),))]
+hash found
+hash found
+Move 57
+Floors:
+{('generator', 'hydrogen')}
+{('generator', 'lithium')}
+{('chip', 'hydrogen'), ('chip', 'lithium')}
+set()
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'hydrogen'), ('chip', 'lithium'))), (1, (('chip', 'hydrogen'), ('chip', 'lithium'))), (1, (('chip', 'hydrogen'),)), (3, (('chip', 'lithium'),)), (1, (('chip', 'lithium'),))]
+Move 58
+Floors:
+{('generator', 'hydrogen')}
+{('chip', 'hydrogen'), ('generator', 'lithium'), ('chip', 'lithium')}
+set()
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('chip', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'), ('chip', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+[(4, (('chip', 'hydrogen'), ('generator', 'lithium'))), (4, (('chip', 'hydrogen'), ('chip', 'lithium'))), (2, (('chip', 'hydrogen'), ('chip', 'lithium'))), (4, (('generator', 'lithium'), ('chip', 'lithium'))), (2, (('generator', 'lithium'), ('chip', 'lithium'))), (4, (('chip', 'hydrogen'),)), (2, (('chip', 'hydrogen'),)), (4, (('generator', 'lithium'),)), (2, (('generator', 'lithium'),)), (2, (('chip', 'lithium'),))]
+Move 59
+Floors:
+{('chip', 'hydrogen'), ('generator', 'lithium'), ('generator', 'hydrogen')}
+{('chip', 'lithium')}
+set()
+set()
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'hydrogen'), ('generator', 'lithium'))), (3, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (3, (('generator', 'lithium'), ('generator', 'hydrogen'))), (3, (('chip', 'hydrogen'),)), (3, (('generator', 'lithium'),))]
+hash found
+Move 60
+Floors:
+{('generator', 'lithium')}
+{('chip', 'lithium'), ('generator', 'hydrogen'), ('chip', 'hydrogen')}
+set()
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('chip', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'), ('chip', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+[(4, (('chip', 'lithium'), ('generator', 'hydrogen'))), (4, (('chip', 'lithium'), ('chip', 'hydrogen'))), (2, (('chip', 'lithium'), ('chip', 'hydrogen'))), (4, (('generator', 'hydrogen'), ('chip', 'hydrogen'))), (2, (('generator', 'hydrogen'), ('chip', 'hydrogen'))), (4, (('chip', 'lithium'),)), (2, (('chip', 'lithium'),)), (4, (('generator', 'hydrogen'),)), (2, (('generator', 'hydrogen'),)), (2, (('chip', 'hydrogen'),))]
+Move 61
+Floors:
+{('chip', 'lithium'), ('generator', 'hydrogen'), ('generator', 'lithium')}
+{('chip', 'hydrogen')}
+set()
+set()
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'lithium'), ('generator', 'hydrogen'))), (3, (('chip', 'lithium'), ('generator', 'lithium'))), (3, (('generator', 'hydrogen'), ('generator', 'lithium'))), (3, (('chip', 'lithium'),)), (3, (('generator', 'hydrogen'),))]
+hash found
+hash found
+Move 62
+Floors:
+{('chip', 'lithium')}
+{('chip', 'hydrogen'), ('generator', 'lithium'), ('generator', 'hydrogen')}
+set()
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'), ('generator', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'), ('generator', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+[(4, (('chip', 'hydrogen'), ('generator', 'lithium'))), (4, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (2, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (4, (('generator', 'lithium'), ('generator', 'hydrogen'))), (2, (('generator', 'lithium'), ('generator', 'hydrogen'))), (4, (('chip', 'hydrogen'),)), (2, (('chip', 'hydrogen'),)), (4, (('generator', 'lithium'),)), (2, (('generator', 'lithium'),)), (2, (('generator', 'hydrogen'),))]
+Move 63
+Floors:
+{('chip', 'lithium'), ('generator', 'lithium'), ('chip', 'hydrogen')}
+{('generator', 'hydrogen')}
+set()
+set()
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'lithium'), ('generator', 'lithium'))), (3, (('chip', 'lithium'), ('chip', 'hydrogen'))), (3, (('generator', 'lithium'), ('chip', 'hydrogen'))), (3, (('generator', 'lithium'),)), (3, (('chip', 'hydrogen'),))]
+Move 64
+Floors:
+{('chip', 'hydrogen')}
+{('chip', 'lithium'), ('generator', 'lithium'), ('generator', 'hydrogen')}
+set()
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'), ('generator', 'hydrogen'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+[(4, (('chip', 'lithium'), ('generator', 'lithium'))), (2, (('chip', 'lithium'), ('generator', 'lithium'))), (4, (('chip', 'lithium'), ('generator', 'hydrogen'))), (4, (('generator', 'lithium'), ('generator', 'hydrogen'))), (2, (('generator', 'lithium'), ('generator', 'hydrogen'))), (4, (('chip', 'lithium'),)), (2, (('chip', 'lithium'),)), (2, (('generator', 'lithium'),)), (4, (('generator', 'hydrogen'),)), (2, (('generator', 'hydrogen'),))]
+hash found
+Move 65
+Floors:
+{('chip', 'hydrogen')}
+{('generator', 'hydrogen')}
+{('chip', 'lithium'), ('generator', 'lithium')}
+set()
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+n_l value: 3
+n_l value: 1
+[(3, (('chip', 'lithium'), ('generator', 'lithium'))), (1, (('chip', 'lithium'), ('generator', 'lithium'))), (1, (('chip', 'lithium'),)), (3, (('generator', 'lithium'),)), (1, (('generator', 'lithium'),))]
+hash found
+Move 66
+Floors:
+{('chip', 'hydrogen')}
+{('generator', 'hydrogen')}
+set()
+{('chip', 'lithium'), ('generator', 'lithium')}
+Elevator Location:
+1
+
+[2]
+n_l value: 2
+HERE
+2 (('chip', 'lithium'), ('generator', 'lithium'))
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(2, (('chip', 'lithium'), ('generator', 'lithium'))), (2, (('chip', 'lithium'),)), (2, (('generator', 'lithium'),))]
+hash found
+Move 67
+Floors:
+{('chip', 'hydrogen')}
+{('generator', 'hydrogen')}
+{('chip', 'lithium')}
+{('generator', 'lithium')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+[(1, (('chip', 'lithium'),))]
+hash found
+Move 67
+Floors:
+{('chip', 'hydrogen')}
+{('generator', 'hydrogen')}
+{('generator', 'lithium')}
+{('chip', 'lithium')}
+Elevator Location:
+2
+
+[3, 1]
+n_l value: 3
+n_l value: 1
+[(3, (('generator', 'lithium'),)), (1, (('generator', 'lithium'),))]
+hash found
+hash found
+Move 66
+Floors:
+{('chip', 'hydrogen')}
+{('generator', 'hydrogen')}
+{('generator', 'lithium')}
+{('chip', 'lithium')}
+Elevator Location:
+1
+
+[2]
+n_l value: 2
+HERE
+2 (('chip', 'lithium'),)
+[(2, (('chip', 'lithium'),))]
+hash found
+hash found
+Move 66
+Floors:
+{('chip', 'hydrogen')}
+{('generator', 'hydrogen')}
+{('chip', 'lithium')}
+{('generator', 'lithium')}
+Elevator Location:
+1
+
+[2]
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(2, (('generator', 'lithium'),))]
+hash found
+Move 65
+Floors:
+{('chip', 'hydrogen'), ('generator', 'hydrogen'), ('chip', 'lithium')}
+{('generator', 'lithium')}
+set()
+set()
+Elevator Location:
+4
+
+[3]
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+n_l value: 3
+[(3, (('chip', 'hydrogen'), ('generator', 'hydrogen'))), (3, (('chip', 'hydrogen'), ('chip', 'lithium'))), (3, (('generator', 'hydrogen'), ('chip', 'lithium'))), (3, (('generator', 'hydrogen'),)), (3, (('chip', 'lithium'),))]
+hash found
+hash found
+hash found
+Move 66
+Floors:
+{('chip', 'hydrogen'), ('chip', 'lithium')}
+{('generator', 'hydrogen'), ('generator', 'lithium')}
+set()
+set()
+Elevator Location:
+3
+
+[4, 2]
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'), ('generator', 'lithium'))
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'hydrogen'),)
+n_l value: 4
+n_l value: 2
+HERE
+2 (('generator', 'lithium'),)
+[(4, (('generator', 'hydrogen'), ('generator', 'lithium'))), (2, (('generator', 'hydrogen'), ('generator', 'lithium'))), (4, (('generator', 'hydrogen'),)), (2, (('generator', 'hydrogen'),)), (4, (('generator', 'lithium'),)), (2, (('generator', 'lithium'),))]
+Done!
+result found
