@@ -1,5 +1,5 @@
 # read input
-nums = [int(i) for i in open('01_input').read().split('\n')]
+nums = [int(i) for i in open('01_input')]
 
 seen = set()
 tot = 0
