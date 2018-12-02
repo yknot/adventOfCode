@@ -1,7 +1,6 @@
 from collections import defaultdict
 
-
-inpt = [i.strip('\n') for  i in open('02_input')]
+inpt = [i.strip('\n') for i in open('02_input')]
 
 # early stopping
 found = False
@@ -35,6 +34,3 @@ for line in inpt:
     # early stopping
     if found:
         break
-
-        
-        
