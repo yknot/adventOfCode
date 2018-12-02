@@ -15,11 +15,9 @@ while 1:
             print(tot)
             found = True
             break
-            
+
         # add unseen
         seen.add(tot)
 
     if found:
         break
-    
-    

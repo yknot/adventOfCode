@@ -1,13 +1,12 @@
 from collections import defaultdict
 
-
-inpt = [i for  i in open('02_input')]
+inpt = [i for i in open('02_input')]
 
 twos = 0
 threes = 0
 
 for line in inpt:
-    counts = defaultdict(lambda: 0)
+    counts = defaultdict(int)
     for l in line:
         counts[l] += 1
 
@@ -17,4 +16,3 @@ for line in inpt:
         threes += 1
 
 print(twos * threes)
-    
