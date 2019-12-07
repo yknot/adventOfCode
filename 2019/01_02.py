@@ -29,6 +29,7 @@ def calc_fuel(mass):
     # otherwise recurse to add the fuel for our fuel
     return fuel + calc_fuel(fuel)
 
+
 def tests():
     """tests from the description"""
     assert calc_fuel(12) == 2
@@ -39,9 +40,4 @@ def tests():
 
 tests()
 
-print(sum(calc_fuel(int(l)) for l in open('01_input').readlines()))
-
-    
-
-
-
+assert sum(calc_fuel(int(l)) for l in open("01_input").readlines()) == 5268207

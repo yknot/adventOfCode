@@ -12,11 +12,13 @@ floor(mass / 3) - 2
 output:
 sum of the fuel required for each module
 """
+from utils import read_input
 
 
 def calc_fuel(mass):
     """floor of the mass divided by 3 minus 2"""
     return (mass // 3) - 2
+
 
 def tests():
     """tests from the description"""
@@ -28,9 +30,4 @@ def tests():
 
 tests()
 
-print(sum(calc_fuel(int(l)) for l in open('01_input').readlines()))
-
-    
-
-
-
+assert sum(calc_fuel(int(l)) for l in read_input(1)) == 3514064

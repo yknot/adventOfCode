@@ -19,7 +19,8 @@ what pair of inputs produces 19690720
     inpt[2] -> verb
 
 """
-import sys
+import copy
+from utils import read_input, integers, cat
 
 
 def run_ops(inpt):
@@ -31,7 +32,7 @@ def run_ops(inpt):
             idx += 4
         elif inpt[idx] == 2:
             # run multiplication
-            inpt[inpt[idx + 3]] = inpt[inpt[idx + 1]] *  inpt[inpt[idx + 2]]
+            inpt[inpt[idx + 3]] = inpt[inpt[idx + 1]] * inpt[inpt[idx + 2]]
             idx += 4
         elif inpt[idx] == 99:
             # halt
@@ -41,6 +42,18 @@ def run_ops(inpt):
             return [0]
 
     return inpt
+
+
+def run_all(inpt):
+    while 1:
+        for noun in range(100):
+            for verb in range(100):
+                data = list(copy.copy(inpt))
+                data[1] = noun
+                data[2] = verb
+
+                if run_ops(data)[0] == 19690720:
+                    return 100 * noun + verb
 
 
 # run tests
@@ -55,13 +68,4 @@ tests()
 
 
 # swap out first two
-while 1:
-    for noun in range(100):
-        for verb in range(100):
-            data = [int(r) for r in open('02_input').read().split(',')]
-            data[1] = noun
-            data[2] = verb
-
-            if run_ops(data)[0] == 19690720:
-                print(100 * noun + verb)
-                sys.exit()
+assert run_all(integers(cat(read_input(2)))) == 7195
