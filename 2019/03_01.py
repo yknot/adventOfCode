@@ -10,6 +10,7 @@ Distance
 
 """
 import math
+from utils import read_input
 
 
 def find_points(wire):
@@ -46,8 +47,7 @@ def find_min_cross(wire_a, wire_b):
     return min_sum
 
 
-def split_input(inpt):
-    wire_a, wire_b = inpt.split()
+def split_input(wire_a, wire_b):
     wire_a = wire_a.split(",")
     wire_b = wire_b.split(",")
 
@@ -56,21 +56,12 @@ def split_input(inpt):
 
 # run tests
 def tests():
-    assert (
-        find_min_cross(
-            *split_input(
-                """R8,U5,L5,D3
-U7,R6,D4,L4"""
-            )
-        )
-        == 6
-    )
+    assert find_min_cross(*split_input("R8,U5,L5,D3", "U7,R6,D4,L4")) == 6
 
     assert (
         find_min_cross(
             *split_input(
-                """R75,D30,R83,U83,L12,D49,R71,U7,L72
-U62,R66,U55,R34,D71,R55,D58,R83"""
+                "R75,D30,R83,U83,L12,D49,R71,U7,L72", "U62,R66,U55,R34,D71,R55,D58,R83"
             )
         )
         == 159
@@ -79,8 +70,8 @@ U62,R66,U55,R34,D71,R55,D58,R83"""
     assert (
         find_min_cross(
             *split_input(
-                """R98,U47,R26,D63,R33,U87,L62,D20,R33,U53,R51
-U98,R91,D20,R16,D67,R40,U7,R15,U6,R7"""
+                "R98,U47,R26,D63,R33,U87,L62,D20,R33,U53,R51",
+                "U98,R91,D20,R16,D67,R40,U7,R15,U6,R7",
             )
         )
         == 135
@@ -89,4 +80,4 @@ U98,R91,D20,R16,D67,R40,U7,R15,U6,R7"""
 
 tests()
 
-print(find_min_cross(*split_input(open("03_input").read())))
+assert find_min_cross(*split_input(*read_input(3))) == 1225

@@ -10,6 +10,7 @@ after opcode move forward 4
 
 
 """
+from utils import read_input, integers, cat
 
 
 def run_ops(inpt):
@@ -42,9 +43,9 @@ def tests():
 
 tests()
 
-data = [int(r) for r in open("02_input").read().split(",")]
+data = list(integers(cat(read_input(2))))
 # swap out first two
 data[1] = 12
 data[2] = 2
 
-print(run_ops(data)[0])
+assert run_ops(data)[0] == 3760627
