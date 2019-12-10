@@ -20,7 +20,7 @@ what pair of inputs produces 19690720
 
 """
 import copy
-from utils import read_input, integers, cat
+from utils import read_integers
 
 
 def run_ops(inpt):
@@ -68,4 +68,4 @@ tests()
 
 
 # swap out first two
-assert run_all(integers(cat(read_input(2)))) == 7195
+assert run_all(read_integers(2)) == 7195
