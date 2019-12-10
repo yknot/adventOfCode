@@ -18,6 +18,7 @@ test cases
 output:
 sum of the fuel required for each module
 """
+from utils import read_input
 
 
 def calc_fuel(mass):
@@ -40,4 +41,4 @@ def tests():
 
 tests()
 
-assert sum(calc_fuel(int(l)) for l in open("01_input").readlines()) == 5268207
+assert sum(calc_fuel(int(l)) for l in read_input(1)) == 5268207

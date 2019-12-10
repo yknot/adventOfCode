@@ -10,7 +10,7 @@ after opcode move forward 4
 
 
 """
-from utils import read_input, integers, cat
+from utils import read_integers
 
 
 def run_ops(inpt):
@@ -43,7 +43,7 @@ def tests():
 
 tests()
 
-data = list(integers(cat(read_input(2))))
+data = read_integers(2)
 # swap out first two
 data[1] = 12
 data[2] = 2

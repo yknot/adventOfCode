@@ -18,3 +18,13 @@ def mapt(fn, *args):
 
 
 cat = "".join
+
+
+def read_integers(*args):
+    "run read input but return tuple of integers"
+    return list(integers(cat(read_input(*args))))
+
+
+def ints(l):
+    "take a list and cast to ints"
+    return [int(i) for i in l]
