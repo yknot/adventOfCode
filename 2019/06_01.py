@@ -39,4 +39,4 @@ test = ["COM)B", "B)C", "C)D", "D)E", "E)F", "B)G", "G)H", "D)I", "E)J", "J)K", 
 assert count_orbits(create_graph(parse_input(test))) == 42
 
 
-print(count_orbits(create_graph(parse_input(read_input(6)))))
+assert count_orbits(create_graph(parse_input(read_input(6)))) == 300598
