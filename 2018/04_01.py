@@ -2,7 +2,7 @@
 from collections import defaultdict
 
 
-class Guard():
+class Guard:
     """Guard class"""
 
     def __init__(self, gid):
@@ -12,7 +12,7 @@ class Guard():
 
     def add_time(self, s, e):
         """add sleep time"""
-        self.total += (e - s)
+        self.total += e - s
         for i in range(s, e):
             self.asleep[i] += 1
 
@@ -23,18 +23,18 @@ def parse_input(inpt):
     i = 0
     while i < len(inpt):
 
-        assert 'Guard' in inpt[i]
+        assert "Guard" in inpt[i]
         gid = int(inpt[i].split()[3][1:])
         if gid not in guards:
             guards[gid] = Guard(gid)
 
         i += 1
-        while 'Guard' not in inpt[i]:
-            assert 'asleep' in inpt[i]
+        while "Guard" not in inpt[i]:
+            assert "asleep" in inpt[i]
             start_time = int(inpt[i][15:17])
 
             i += 1
-            assert 'wake' in inpt[i]
+            assert "wake" in inpt[i]
             end_time = int(inpt[i][15:17])
 
             guards[gid].add_time(start_time, end_time)
@@ -75,5 +75,5 @@ if __name__ == "__main__":
 [1518-11-05 00:45] falls asleep
 [1518-11-05 00:55] wakes up"""
 
-    assert solve(test.split('\n')) == 240
-    assert solve(sorted(open('04_input').readlines())) == 99911
+    assert solve(test.split("\n")) == 240
+    assert solve(sorted(open("04_input").readlines())) == 99911
