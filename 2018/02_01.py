@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-inpt = [i for i in open('02_input')]
+inpt = [i for i in open("02_input")]
 
 twos = 0
 threes = 0
@@ -15,4 +15,4 @@ for line in inpt:
     if 3 in counts.values():
         threes += 1
 
-print(twos * threes)
+assert twos * threes == 5390

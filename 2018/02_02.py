@@ -1,6 +1,7 @@
 from collections import defaultdict
 
-inpt = [i.strip('\n') for i in open('02_input')]
+inpt = [i.strip("\n") for i in open("02_input")]
+result = None
 
 # early stopping
 found = False
@@ -14,7 +15,7 @@ for line in inpt:
             continue
 
         count = 0
-        tmp = ''
+        tmp = ""
         for i, l in enumerate(line):
             # early stopping
             if count > 1:
@@ -27,10 +28,12 @@ for line in inpt:
 
         # if answer
         if count == 1:
-            print(tmp)
-            found = True
+            result = tmp
             break
 
     # early stopping
-    if found:
+    if result:
         break
+
+
+assert result == "nvosmkcdtdbfhyxsphzgraljq"

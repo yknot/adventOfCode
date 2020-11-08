@@ -7,11 +7,10 @@ class Claim:
 
     def __init__(self, line):
         ident, _, offset, shape = line.split()
-        self.id = int(ident.lstrip('#'))
-        self.lower = tuple([int(i.strip(':')) for i in offset.split(',')])
-        self.shape = tuple([int(i.strip(':')) for i in shape.split('x')])
-        self.upper = (self.lower[0] + self.shape[0],
-                      self.lower[1] + self.shape[1])
+        self.id = int(ident.lstrip("#"))
+        self.lower = tuple([int(i.strip(":")) for i in offset.split(",")])
+        self.shape = tuple([int(i.strip(":")) for i in shape.split("x")])
+        self.upper = (self.lower[0] + self.shape[0], self.lower[1] + self.shape[1])
         self.overlapped = False
 
 
@@ -59,6 +58,6 @@ if __name__ == "__main__":
 #2 @ 3,1: 4x4
 #3 @ 5,5: 2x2"""
 
-    assert find_total_overlaps(test.split('\n')) == 3
+    assert find_total_overlaps(test.split("\n")) == 3
 
-    assert find_total_overlaps(open('03_input').readlines()) == 775
+    assert find_total_overlaps(open("03_input").readlines()) == 775
