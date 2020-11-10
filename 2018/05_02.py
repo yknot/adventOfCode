@@ -42,4 +42,4 @@ result = run_all("dabAcCaCBAcCcaDA")
 assert result == "daDA"
 assert len(result) == 4
 
-print(len(run_all(read_input(5))))
+assert len(run_all(read_input(5))) == 6968
