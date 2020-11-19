@@ -16,7 +16,7 @@ def order(pairs):
     queue = sorted(nodes.difference(set(flatten(edges.values()))))
     out = ""
 
-    while queue:
+    while len(nodes) > 1:
         # get the next one and add to output
         q = queue.pop(0)
         out += q
@@ -27,11 +27,7 @@ def order(pairs):
         # resort queue
         queue = sorted(nodes.difference(set(flatten(edges.values()))))
 
-        # avoid ending issue
-        if len(nodes) == 1:
-            out += queue[0]
-            break
-
+    out += queue[0]
     return out
 
 
