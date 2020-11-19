@@ -1,5 +1,10 @@
 """utility functions to be used in solving the puzzles"""
 import re
+from itertools import chain
+
+
+def flatten(lst):
+    return list(chain(*lst))
 
 
 def read_input(day, line_parser=str.strip, file_template="{:02}_input"):
