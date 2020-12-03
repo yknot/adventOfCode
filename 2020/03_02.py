@@ -15,10 +15,7 @@ def traverse(grid, x, y):
             hits += 1
 
         # move
-        loc = [loc[0] + x, loc[1] + y]
-
-        if loc[0] >= len(grid[0]):
-            loc[0] = loc[0] - len(grid[0])
+        loc = [(loc[0] + x) % len(grid[0]), loc[1] + y]
 
     return hits
 
