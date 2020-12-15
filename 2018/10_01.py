@@ -100,4 +100,4 @@ test_inpt = tuple(integers(x) for x in test_inpt.split("\n"))
 assert find_word(test_inpt) == 3
 
 inpt = read_input(10, line_parser=integers)
-print(find_word(inpt))
+assert find_word(inpt) == 10630
