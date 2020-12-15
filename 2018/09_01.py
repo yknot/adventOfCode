@@ -48,4 +48,3 @@ assert find_winner(21, 6111) == 54718
 assert find_winner(30, 5807) == 37305
 
 assert find_winner(423, 71944) == 418237
-
