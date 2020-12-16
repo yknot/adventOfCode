@@ -24,4 +24,3 @@ assert parse_questions(test_inpt) == 11
 inpt = read_input(6)
 
 assert parse_questions(inpt) == 6782
-
