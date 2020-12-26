@@ -1,6 +1,7 @@
 """utility functions to be used in solving the puzzles"""
 import re
 from itertools import chain
+from math import factorial
 
 
 def flatten(lst):
@@ -36,3 +37,8 @@ def read_integers(*args):
 def ints(l):
     "take a list and cast to ints"
     return [int(i) for i in l]
+
+
+def comb(n, r):
+    """n choose r"""
+    return int(factorial(n) / (factorial(n - r) * factorial(r)))
