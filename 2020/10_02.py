@@ -118,4 +118,3 @@ assert find_joltage(test_inpt) == 19208
 inpt = list(read_input(10, line_parser=int))
 
 assert find_joltage(inpt) == 4628074479616
-
