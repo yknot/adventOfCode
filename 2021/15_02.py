@@ -1,10 +1,43 @@
 """
 Day 15, part 2
 """
+from heapq import heappop, heappush
 from copy import deepcopy
 from collections import defaultdict
 import numpy as np
 from utils import read_input
+
+
+class PriorityQueue:
+    def __init__(self):
+        self.pq = []
+        self.entry_finder = {}
+        self.removed_placeholder = "<removed-task>"
+
+    def add(self, task, priority=0):
+        if task in self.entry_finder:
+            self.remove_task(task)
+        entry = [priority, task]
+        self.entry_finder[task] = entry
+        heappush(self.pq, entry)
+
+    def remove(self, task):
+        entry = self.entry_finder.pop(task)
+        entry[-1] = self.removed_placeholder
+
+    def pop(self):
+        while self.pq:
+            _, task = heappop(self.pq)
+            if task is not self.removed_placeholder:
+                del self.entry_finder[task]
+                return task
+        raise KeyError("empty queue")
+
+    def __len__(self):
+        return len(self.pq)
+
+    def __contains__(self, task):
+        return task in self.entry_finder.keys()
 
 
 def expand_grid(inpt):
@@ -31,7 +64,7 @@ def expand_grid(inpt):
 
 
 def dijkstra(grid, edges, size):
-    queue = []
+    queue = PriorityQueue()
     visited = set()
     dist = {}
     prev = {}
@@ -40,21 +73,22 @@ def dijkstra(grid, edges, size):
         dist[k] = np.inf
         prev[k] = None
     dist[(0, 0)] = 0
-    queue.append((0, 0))
+    queue.add((0, 0))
 
     next_min_point = None
     next_min_val = None
 
-    while queue:
-        min_point = None
-        min_val = np.inf
-        for q in queue:
-            if dist[q] < min_val:
-                min_val = dist[q]
-                min_point = q
+    while len(queue):
+        min_point = queue.pop()
+        # min_point = None
+        # min_val = np.inf
+        # for q in queue:
+        #     if dist[q] < min_val:
+        #         min_val = dist[q]
+        #         min_point = q
 
         # remove from queue
-        queue.pop(queue.index(min_point))
+        # queue.pop(queue.index(min_point))
 
         # hit end
         if min_point == (size - 1, size - 1):
@@ -66,8 +100,7 @@ def dijkstra(grid, edges, size):
                 if alt < dist[(i, j)]:
                     dist[(i, j)] = alt
                     prev[(i, j)] = min_point
-                if (i, j) not in queue:
-                    queue.append((i, j))
+                    queue.add((i, j), dist[(i, j)])
 
         visited.add(min_point)
 
