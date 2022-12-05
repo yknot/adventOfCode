@@ -10,7 +10,8 @@ def flatten(lst):
 
 def read_input(day, line_parser=str.strip, file_template="{:02}_input"):
     "read the input file and pass it back"
-    res = mapt(line_parser, open(file_template.format(day)))
+    with open(file_template.format(day)) as f:
+        res = mapt(line_parser, f)
     if len(res) == 1:
         return res[0]
     return res
