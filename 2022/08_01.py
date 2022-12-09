@@ -2,7 +2,6 @@
 Day 8
 """
 import numpy as np
-from utils import read_input
 
 test_inpt = """30373
 25512
