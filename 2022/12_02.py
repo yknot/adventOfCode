@@ -102,7 +102,6 @@ def find_shortest_path(inpt):
         dist, _ = dijkstra(grid, edges, start, target)
         dists.append(dist[target])
 
-    print(min(dists))
     return min(dists)
 
 
@@ -117,4 +116,4 @@ assert find_shortest_path(test_inpt.split("\n")) == 29
 
 inpt = list(read_input(12))
 
-assert find_shortest_path(inpt) == 394
+assert find_shortest_path(inpt) == 388
