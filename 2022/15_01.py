@@ -10,45 +10,28 @@ def distance(x, y):
 
 def find_beacon(inpt, line):
     scanners = {k: distance(k, v) for k, v in inpt}
-    beacons = set([v for _, v in inpt])
-    start = (sum([i[0][0] for i in inpt]) // len(inpt), line)
-    total = 0
-    # check left
-    i = 0
-    while True:
-        if (start[0] - i, start[1]) in beacons:
-            i += 1
+    possible_intersections = set([v for _, v in inpt if v[1] == line])
+    possible_intersections.union(set(k for k in scanners.keys() if k[1] == line))
+
+    points = set()
+    for (x, y), d in scanners.items():
+        temp_x = x
+        dist = distance((x, y), (temp_x, line))
+        if d < dist:
             continue
-        for s, d in scanners.items():
-            # if as close or closer then can't exist
 
-            if d >= distance(s, (start[0] - i, start[1])):
-                total += 1
-                break
-        else:
-            print(start[0] - i)
-            break
-        i += 1
-
-    i = 1
-    # chek right
-    while True:
-        if (start[0] + i, start[1]) in beacons:
+        points.add((temp_x, line))
+        i = 1
+        while d >= (dist + i):
+            points.add((temp_x - i, line))
+            points.add((temp_x + i, line))
             i += 1
-            continue
-        for s, d in scanners.items():
-            # if as close or closer then can't exist
-            if d >= distance(s, (start[0] + i, start[1])):
-                total += 1
-                break
-        else:
-            print(start[0] + i)
-            break
 
-        i += 1
-
-    print(total)
-    return total
+    for p in possible_intersections:
+        points.remove(p)
+    # print(points)
+    print(len(points))
+    return len(points)
 
 
 test_inpt = """Sensor at x=2, y=18: closest beacon is at x=-2, y=15
