@@ -29,8 +29,6 @@ def find_beacon(inpt, line):
 
     for p in possible_intersections:
         points.remove(p)
-    # print(points)
-    print(len(points))
     return len(points)
 
 
