@@ -2,73 +2,69 @@
 Day 16
 """
 from utils import read_input
-from dataclasses import dataclass
+from networkx import Graph, shortest_path_length
+from itertools import combinations
 
 
-@dataclass
-class Valve:
-    name: str
-    rate: int
-    edges: list[str]
-
-
-path_count = 0
-
-
-def search(valves, path, curr_v, on, flow):
-    global path_count
-    if len(path) == 30:
-        path_count += 1
-        # print(path, flow, sum(flow))
-        print(path)
-        if path_count == 1000:
-            import sys
-
-            sys.exit(1)
+def search(dists, rates, path, flow):
+    if len(flow) == 30:
         return path, flow, sum(flow)
-    if len(on) == len(valves):
-        return search(valves, path + ["noop"], curr_v, on, flow + [flow[-1]])
 
-    curr_flow = flow[-1]
+    # handle base case of first node
+    curr_flow = flow[-1] if flow else 0
+    # new flow with node turned on
+    new_flow = curr_flow + rates[path[-1]]
 
     options = []
-
-    if curr_v not in on:
-        new_flow = curr_flow + valves[curr_v].rate
-        ret = search(
-            valves,
-            path + [curr_v + "_on"],
-            curr_v,
-            on + [curr_v],
-            flow + [new_flow],
-        )
-        options.append(ret)
-
-    for edge in valves[curr_v].edges:
-        # don't go back to the previous node
-        if len(path) >= 2 and edge == path[-2]:
+    for (i, j), d in dists.items():
+        # not one of the connected edges
+        if path[-1] != i:
             continue
-        ret = search(
-            valves,
-            path + [edge],
-            edge,
-            on,
-            flow + [curr_flow],
+        # if already in path skip
+        if j in path:
+            continue
+        # if move will cause longer path longer than 30
+        if (len(flow) + d) > 30:
+            continue
+        options.append(
+            search(
+                dists,
+                rates,
+                path + [j],
+                flow + ([new_flow] * d),
+            )
         )
-        options.append(ret)
 
+    # if no options work wait it out at current node
     if len(options) == 0:
-        return [], [], 0
+        flow = flow + ([new_flow] * (30 - len(flow)))
+        return path, flow, sum(flow)
+
     return max(options, key=lambda x: x[2])
 
 
 def optimize_flow(valves):
-    valves = {v.name: v for v in valves}
+    G = Graph()
+    flow_nodes = ["AA"]
+    rates = {"AA": 0}
+    # setup the graph
+    for v, r, e in valves:
+        G.add_node(v)
+        for edge in e:
+            G.add_edge(v, edge)
+        if r != 0:
+            flow_nodes.append(v)
+            rates[v] = r
 
-    ret = search(valves, ["AA"], "AA", [v for v in valves if valves[v].rate == 0], [0])
-    print(ret[0])
-    print(ret[1])
-    print(ret[2])
+    # get all the distances between flow nodes
+    dists = {}
+    for i, j in combinations(flow_nodes, 2):
+        d = shortest_path_length(G, i, j)
+        dists[(i, j)] = d + 1
+        dists[(j, i)] = d + 1
+
+    ret = search(dists, rates, ["AA"], [])
+
     return ret[2]
 
 
@@ -93,14 +89,14 @@ def parser(line):
         if l in ["valves", "valve"]:
             edges = [l.strip(",") for l in line[i + 1 :]]
             break
-    return Valve(valve, rate, edges)
+    return valve, rate, edges
 
 
 test_valves = [parser(line) for line in test_inpt.split("\n")]
 
 assert optimize_flow(test_valves) == 1651
-print(path_count)
+
 
 valves = read_input(16, line_parser=parser)
-
-# assert optimize_flow(valves) == 1871
+path_count = 0
+assert optimize_flow(valves) == 1871
