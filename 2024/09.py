@@ -40,10 +40,10 @@ def reformat_data_quick(uncompressed):
     return uncompressed
 
 
-def find_free(lst, length, limit):
+def find_free(lst: list, length: int, limit: int) -> int:
     idx = lst.index(".")
     count = 0
-    while idx < limit:
+    while idx <= limit:
         if count == length:
             return idx - length
         if lst[idx] == ".":
@@ -53,48 +53,34 @@ def find_free(lst, length, limit):
 
         idx += 1
 
+    return -1
+
 
 def reformat_data_full_files(data, uncompressed):
+    orig_count = uncompressed.count(".")
     orig_len = len(uncompressed)
-    idx = len(uncompressed) - 1
-    val = None
-    seen = []
-    while idx >= 0:
-        if uncompressed[idx] != ".":
-            # make sure we haven't moved it before
-            if uncompressed[idx] in seen:
-                idx -= 1
-                continue
-            seen.append(uncompressed[idx])
+    len_ids = len(data[::2])
+    for i, length in enumerate(data[::2][::-1]):
+        length = int(length)
+        val = str(len_ids - 1 - i)
+        idx = uncompressed.index(val)
+        assert uncompressed[idx : idx + length] == [str(val)] * length
 
-            # find out length of file
-            val = uncompressed[idx]
-            length = 1
-            idx -= 1
-            while uncompressed[idx] == val:
-                idx -= 1
-                length += 1
-            idx += 1
+        empty_idx = find_free(uncompressed, length, idx)
 
-            # swap out files if found
-            empty_idx = find_free(uncompressed, length, idx)
-            if empty_idx:
-                uncompressed[empty_idx : empty_idx + length] = [val] * length
-                uncompressed[idx : idx + length] = ["."] * length
-            else:
-                print(f"Couldn't find fit for {val} with length {length}")
+        if empty_idx != -1:
+            assert uncompressed[empty_idx : empty_idx + length] == ["."] * length
 
-        idx -= 1
-    with open("uncompressed", "w") as f:
-        f.write(str(uncompressed))
+            uncompressed[empty_idx : empty_idx + length] = [val] * length
+            uncompressed[idx : idx + length] = ["."] * length
 
-    seen = [int(i) for i in seen]
-    assert seen == sorted(seen, reverse=True)
-    assert len(seen) == len(data[::2])
+    # tests
     assert len(uncompressed) == orig_len
-
     for i, val in enumerate(data[::2]):
         assert uncompressed.count(str(i)) == int(val)
+        start = uncompressed.index(str(i))
+        assert uncompressed[start : start + int(val)] == [str(i)] * int(val)
+    assert uncompressed.count(".") == orig_count
 
     return uncompressed
 
@@ -114,8 +100,6 @@ def calc_checksum(data, full_files=False):
     if full_files:
         uncompressed = reformat_data_full_files(data, uncompressed)
     else:
-        with open("uncompressed_start", "w") as f:
-            f.write(str(uncompressed))
         uncompressed = reformat_data_quick(uncompressed)
 
     total = checksum(uncompressed)
@@ -136,4 +120,4 @@ assert res == 2858, res
 
 with open("09_input") as f:
     res = calc_checksum(f.read(), full_files=True)
-    assert res == 6421128769094, res
+    assert res == 6448168620520, res
