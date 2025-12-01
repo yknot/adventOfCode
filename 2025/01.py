@@ -49,7 +49,7 @@ class Dial:
             # if we started exactly at 0 and moved left, we overcounted by 1
             if started_at_zero and step.direction == "L":
                 self.count -= 1
-            
+
         if self.position == 0:
             # if any_click and we already counted crossings from a rightward move
             if not (any_click and step.direction == "R"):
