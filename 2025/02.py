@@ -17,30 +17,35 @@ class ID:
 
     def find_double_repeats(self) -> list[int]:
         invalids = []
-        for val in range(self.first, self.last + 1):
-            str_val = str(val)
-            if len(str_val) % 2 == 0:
-                mid = len(str_val) // 2
-                if str_val[:mid] == str_val[mid:]:
-                    invalids.append(val)
+
+        min_double = max(len(str(self.first)) // 2, 1)
+        max_double = len(str(self.last)) // 2
+        for half in range(10 ** (min_double - 1), 10**max_double):
+            str_half = str(half)
+            val = int(str_half + str_half)
+            if self.first <= val <= self.last:
+                invalids.append(val)
 
         return invalids
 
     def find_all_repeats(self) -> list[int]:
         invalids = []
-        for val in range(self.first, self.last + 1):
-            str_val = str(val)
-            len_val = len(str_val)
 
-            rep_len = 1
-            # while we can have at least one repeat
-            while rep_len * 2 <= len_val:
-                if len_val % rep_len == 0:
-                    if str_val[:rep_len] * (len_val // rep_len) == str_val:
+        min_length = max(len(str(self.first)), 2)
+        max_length = len(str(self.last)) + 1
+
+        # generate all lengths of numbers that could be in the range
+        for num_digits in range(min_length, max_length):
+            # for all the lengths of repeated patterns
+            for rep_len in range(1, num_digits // 2 + 1):
+                if num_digits % rep_len != 0:
+                    continue
+                reps = num_digits // rep_len
+
+                for rep in range(10 ** (rep_len - 1), 10**rep_len):
+                    val = int(str(rep) * reps)
+                    if self.first <= val <= self.last and val not in invalids:
                         invalids.append(val)
-                        break
-
-                rep_len += 1
 
         return invalids
 
