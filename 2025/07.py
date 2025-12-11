@@ -19,13 +19,10 @@ example = """.......S.......
 ..............."""
 
 
-@dataclass
+@dataclass(frozen=True)
 class Point:
     x: int
     y: int
-
-    def __hash__(self):
-        return hash((self.x, self.y))
 
 
 @dataclass
@@ -45,19 +42,18 @@ class Manifold:
         for i in range(1, self.max_y):
             new_beams = set()
             for beam in current_beams:
-                beam.y += 1
-                if beam in self.splitters:
+                if Point(beam.x, beam.y + 1) in self.splitters:
                     splits += 1
-                    new_beams.add(Point(beam.x - 1, beam.y))
-                    new_beams.add(Point(beam.x + 1, beam.y))
+                    new_beams.add(Point(beam.x - 1, beam.y + 1))
+                    new_beams.add(Point(beam.x + 1, beam.y + 1))
                 else:
-                    new_beams.add(beam)
+                    new_beams.add(Point(beam.x, beam.y + 1))
             current_beams = new_beams
 
         return splits
 
     @lru_cache
-    def count_single_splits(self, loc: Point = None) -> int:
+    def count_single_splits(self, loc: Point | None = None) -> int:
         if loc is None:
             loc = self.start
 
